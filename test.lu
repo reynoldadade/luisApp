@@ -1,0 +1,23 @@
+# infoAboutLecture
+- What time is the lecture {dateandtime=this morning}?
+- When is the next {activity=TBL} for {course=cells to Society}?
+- WHat did I miss {dateandtime=Yesterday}?
+
+# EPA
+- I need to {action=record} an EPA
+- Who is my {role=master assessor}?
+- Can I do an EPA at 10am?
+
+# Scheduling
+- I need to schedule an {action=appointment} with my {role=coach}
+- Are there any {role=coaches} available {dateandtime=tomorrow}?
+- who is my primary {role=coach}?
+
+$dateandtime:Simple
+$activity:Simple
+$course:Simple
+$action:Simple
+$role:Simple
+$PREBUILT:datetimeV2
+
+

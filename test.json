@@ -1,0 +1,163 @@
+{
+  "intents": [
+    {
+      "name": "infoAboutLecture"
+    },
+    {
+      "name": "EPA"
+    },
+    {
+      "name": "Scheduling"
+    }
+  ],
+  "entities": [
+    {
+      "name": "dateandtime",
+      "roles": []
+    },
+    {
+      "name": "activity",
+      "roles": []
+    },
+    {
+      "name": "course",
+      "roles": []
+    },
+    {
+      "name": "action",
+      "roles": []
+    },
+    {
+      "name": "role",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "What time is the lecture this morning?",
+      "intent": "infoAboutLecture",
+      "entities": [
+        {
+          "entity": "dateandtime",
+          "startPos": 25,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "When is the next TBL for cells to Society?",
+      "intent": "infoAboutLecture",
+      "entities": [
+        {
+          "entity": "activity",
+          "startPos": 17,
+          "endPos": 19
+        },
+        {
+          "entity": "course",
+          "startPos": 25,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "WHat did I miss Yesterday?",
+      "intent": "infoAboutLecture",
+      "entities": [
+        {
+          "entity": "dateandtime",
+          "startPos": 16,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "I need to record an EPA",
+      "intent": "EPA",
+      "entities": [
+        {
+          "entity": "action",
+          "startPos": 10,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "Who is my master assessor?",
+      "intent": "EPA",
+      "entities": [
+        {
+          "entity": "role",
+          "startPos": 10,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "Can I do an EPA at 10am?",
+      "intent": "EPA",
+      "entities": []
+    },
+    {
+      "text": "I need to schedule an appointment with my coach",
+      "intent": "Scheduling",
+      "entities": [
+        {
+          "entity": "action",
+          "startPos": 22,
+          "endPos": 32
+        },
+        {
+          "entity": "role",
+          "startPos": 42,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "Are there any coaches available tomorrow?",
+      "intent": "Scheduling",
+      "entities": [
+        {
+          "entity": "role",
+          "startPos": 14,
+          "endPos": 20
+        },
+        {
+          "entity": "dateandtime",
+          "startPos": 32,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "who is my primary coach?",
+      "intent": "Scheduling",
+      "entities": [
+        {
+          "entity": "role",
+          "startPos": 18,
+          "endPos": 22
+        }
+      ]
+    }
+  ],
+  "patterns": [],
+  "patternAnyEntities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    }
+  ],
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "test",
+  "desc": "",
+  "culture": "en-us"
+}
